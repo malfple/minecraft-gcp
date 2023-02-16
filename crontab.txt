@@ -1,0 +1,2 @@
+@reboot date >> /home/<USER>/started_date.txt
+@reboot /etc/init.d/startup.sh
