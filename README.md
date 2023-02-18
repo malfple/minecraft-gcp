@@ -10,7 +10,7 @@ Personal minecraft server
 5. crontab file in `crontab.txt`, make sure to adjust the USER's home folder. You can choose to only use the lines you need.
 6. Copy scripts. Always copy them to `/etc/init.d/<script_name>` and run `sudo chmod 755 /etc/init.d/<script_name>`:
 	1. startup script in `startup.sh`. It is triggered every reboot from crontab. This script contains the startup parameters, so feel free to adjust it based on the available resources.
-	2. auto-shutdown script in `autoshutdown.sh`. It is triggered every 15 mins from crontab. The interval of 15 mins can always be changed to any interval as long as it is supported by cron.
+	2. auto-shutdown script in `autoshutdown.sh`. It is triggered every 15 mins from crontab. The interval of 15 mins can always be changed to any interval as long as it is supported by cron. Don't forget to adjust the SERVICE and USER variables.
 
 ## Operations
 

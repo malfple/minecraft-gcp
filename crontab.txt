@@ -1,4 +1,4 @@
 @reboot date >> /home/<USER>/started_date.txt
 @reboot /etc/init.d/startup.sh
 */15 * * * * date >> /home/<USER>/shutdown_date.txt
-*/15 * * * * /etc/init.d/autoshutdown.sh
+*/15 * * * * /etc/init.d/autoshutdown.sh > /home/<USER>/shutdown_log.txt
